@@ -60,6 +60,7 @@ const toggleClassDetails = (day) => {
               <div>Subject : {{ subject.name }} </div>
               <div>Time : {{ subject.start }}-{{ subject.end }}</div>
               <div>Room : {{ subject.room }}</div>
+              <div>Sec : {{ subject.code }} </div>
           </div>
         </div>
         <div v-if="store.class.find(c => c.day === day).subjectVisible && store.class.find(c => c.day === day).subject.length==0" >
